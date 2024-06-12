@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML="Hola Mundo¡";
+    </script>
+
+    <script>
+        const elementos = document.getElementById("intro")
+    </script>
+
+    <p id="p1">Hola Mundo¡</p>
+
+    <script>
+        document.getElementById("p1").innerHTML="Texto Nuevo";
+    </script>
+
+    <h1 id="tiutlo">Viejo Titulo</h1>
+
+    <script>
+        let elemento = document.getElementById("titulo")
+        elemento.innerHTML="Nuevo Titulo";
+    </script>
+
+    <script>
+        const x = document.getElementById("main");
+        console.log(x);
+        const y = document.getElementById("p")
+        console.log(y);
+    </script>
+
+    <script>
+        const X = document.getElementsByClassName("intro")
+        console.log("X");
+    </script>
+
+    <p class="intro">ejemplo</p>
+    <p class="intro">ejemplo 2</p>
+
+    <script>
+   const x1 = document.querySelectorAll("p.intro");
+    </script>
+
+<ul>
+    <li>FC. Barcelona</li>
+    <li>Real Madrid</li>
+    <li>Real Betis</li>
+    <li>America</li>
+    <li>Merida FC</li>
+    <li>Atlético de Madrid</li>
+  </ul>
+
+<script>
+    const listitems = document.querySelectorAll("ul>li");
+    console.log(listitems);
+    const h1Element = document.querySelector("h1");
+    console.log(h1Element);
+    const list = document.querySelector(".list");
+    console.log(list);
+
+    const listadeelementos = document.querySelectorAll("ul>li");
+
+listadeelementos.forEach((item) => {
+    console.log(item);
+});
+
+const h1 = document.querySelector("h1");
+h1.style.color = "blue";
+
+const m = document.forms["form1"];
+let = "";
+for (let i = 0; i < m.length; i++) {
+    texto += m.elements[i].value +"<br>"; 
+}
+document.getElementById("demo").innerHTML=texto;
+console.log(m);
+
+let lista = document.createElement("ul");
+document.body.appendChild(lista);
+
+let elemento1 = document.createElement("li");
+elemento1.textContent = "flor";
+lista.appendChild(elemento1);
+
+let elemento2 = document.createElement("li");
+elemento2.textContent = "jaguar";
+lista.appendChild(elemento2);
+
+</script>
+ <button id="btn" >boton</button>
+ <br>
+ <script>
+    const button = document.getElementById("btn");
+    button.addEventListener("click",()=>{
+    alert("Gracias por dar Click");
+    });
+ </script>
+<br>
+ <img src="" alt="" id="miimagen">
+ <br>
+
+<p id="dem"></p>
+ <script>
+    document.getElementById("miimagen").src = "Cat.jpg";
+    document.getElementById("dem").innerHTML = "Fecha: "+Date();
+ </script>
+</body>
+</html>
